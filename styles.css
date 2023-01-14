@@ -6,25 +6,24 @@ body {
   align-items: center;
   min-height: 100vh;
   box-sizing: border-box;
-  background-color: #000;
+  background-color: #fff;
 }
 
 .product_card {
   width: 70%;
-  border: 2px solid #fd7e14;
-  box-shadow: 0px 10px 0px #fd7e14;
-  padding: 1em 2em 2em;
+  box-shadow: 0 4px 8px 4px #00000020;
+  padding: 2em 3em;
   margin: 0 auto;
   max-width: 600px;
-  border-radius: 20pt;
+  border-radius: 20px;
   background-color: #fff;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 .product_card .product_card_details h2 {
   font-size: 2.5rem;
-  color: #fd7e14;
+  color: #fff;
   font-weight: 700;
-  text-shadow: 2px 3.5px 0px rgb(103, 98, 98);
+  -webkit-text-stroke: 0.5px #6f6f6f;
   margin: 0.5em 0 0;
 }
 .product_card .product_card_details .description {
@@ -35,23 +34,23 @@ body {
 }
 .product_card .product_card_details .price_buy p {
   font-size: 2rem;
-  color: #40c057;
+  color: #fff;
   font-weight: 700;
-  text-shadow: 2px 3.5px 0px rgb(103, 98, 98);
+  -webkit-text-stroke: 0.5px #6f6f6f;
 }
 .product_card .product_card_details .price_buy button[type=submit] {
   margin: 0;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Roboto', sans-serif;
   width: 100%;
   padding: 0.8em 0;
-  border-radius: 5pt;
+  border-radius: 10px;
   border: none;
   color: #fff;
   font-weight: 700;
   font-size: 1.2rem;
   letter-spacing: 3px;
   text-transform: capitalize;
-  background-color: #fd7e14;
+  background-color: #b22b13;
   cursor: pointer;
   transition: transform 300ms;
 }
@@ -64,12 +63,12 @@ body {
 .product_card .product_img img {
   width: 900px;
   max-width: 100%;
-  rotate: -15deg;
+  rotate: 30deg;
   transform-style: preserve-3d;
-  transition: transform 500ms;
+  transition: transform 300ms;
 }
 .product_card .product_img img:hover {
-  transform: rotateY(180deg);
+  transform: translate3d(-5px, -10px, 0);
 }
 
 @media screen and (min-width: 600px) {
